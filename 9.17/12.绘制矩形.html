@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        canvas {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+<canvas width="600" height="400"></canvas>
+<script>
+    var myCanvas = document.querySelector('canvas');
+    var ctx = myCanvas.getContext('2d');
+    //第一种方式
+   // ctx.rect(100,100,200,100);
+   // ctx.stroke();
+    //第二种方法
+    //ctx.strokeRect(100,100,200,100);
+    ctx.fillRect(100,100,200,100);
+    //清楚矩形区域
+    // ctx.clearRect(0,0,ctx.canvas.width,ctx.canvas.height);
+    ctx.clearRect(100,100,20,10);
+</script>
+</body>
+</html>
